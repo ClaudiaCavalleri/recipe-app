@@ -11,7 +11,7 @@ export default function Recipe({title, calories, image, ingredients, url, }) {
                 ))}
             </ol>
             <p className={style.calories}>Calories: {(calories).toFixed(0)} Kcal</p>
-            <a className={style.url} href={url} target="_blank">View the full recipe</a>
+            <a className={style.url} href={url} target="_blank" rel="noreferrer">View the full recipe</a>
             <img className={style.recipeImage} src={image} alt=""/>
         </div>
     );
