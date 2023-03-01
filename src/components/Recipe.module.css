@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    background-color: #ffffff;
+    border: 1px solid #e7e6e6;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 1rem #533636;
+}
+
+.ingredientsList {
+    padding: 20px;
+}
+
+.ingredient {
+    text-align: left;
+}
+
+.url,
+.calories,
+.image {
+    padding: 20px;
+}
+
+.url {
+    color: #f08080;
+}
+
+.url:hover {
+    color: #533636;
+}
+
+@media only screen and (max-width: 500px ){
+    .recipe {
+        width: 85vw;
+    }
+    .ingredientsList {
+        padding: 10px;
+    }
+}
